@@ -22,18 +22,18 @@
         margin: 5%;
       }
 
-      table {
-        border: 1px solid black;
-      }
-      tr {
-        border: 1px solid black;
-      }
-      td {
-        border: 1px solid black;
-      }
       .outer {
         border: 1px solid black;
         margin: 5px;
+      }
+
+      .cls-update {
+        text-align: center;
+        padding: 5%;
+        border: 1px solid red;
+      }
+      .cls-edit {
+        margin: 5%;
       }
     </style>
   </head>
@@ -41,31 +41,41 @@
     <div class="cls-create">
       <h1>Create Data</h1>
       <div class="cls-read">
-        <input type="text" id="name" placeholder="Name" value="Sunita" />
+        <input type="text" id="name" placeholder="Name" />
       </div>
       <div class="cls-read">
-        <input type="text" id="age" placeholder="Age" value="55" />
+        <input type="text" id="age" placeholder="Age" />
       </div>
       <div class="cls-read">
-        <input
-          type="text"
-          id="mobileNumber"
-          placeholder="MobileNo"
-          value="90909090909"
-        />
+        <input type="text" id="mobileNumber" placeholder="MobileNo" />
       </div>
+
       <table id="myTable">
-        <tbody id="root">
-          <tr>
-            <td>dfsdf</td>
-            <td>sdfsfsd</td>
-            <td>sdfsfsd</td>
-          </tr>
-        </tbody>
+        <tbody id="root"></tbody>
       </table>
       <button id="submit-btn">Submit</button>
       <div id="output"></div>
-      <button id="btn-edit">edit</button>
+    </div>
+
+    <div class="cls-update">
+      <h2>Update Data</h2>
+      <div>
+        <input type="text" id="input-name" />
+      </div>
+      <div class="cls-edit">
+        <label>Name =</label>
+        <input type="text" id="edit-name" />
+      </div>
+      <div class="cls-edit">
+        <label>Age =</label>
+        <input type="text" id="edit-age" />
+      </div>
+      <div class="cls-edit">
+        <label>MobileNo =</label>
+        <input type="text" id="edit-mobile" />
+      </div>
+      <button id="btn-search">search</button>
+      <button id="btn-save">save</button>
       <button id="btn-delete">delete</button>
     </div>
 
